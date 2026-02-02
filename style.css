@@ -41,6 +41,10 @@ a {
   transition: 0.4s;
   text-shadow: var(--text-shadow);
 }
+a:focus-visible {
+  outline: 2px solid var(--accent-1-color);
+  outline-offset: 4px;
+}
 
 #disciplinas,
 #horarios,
@@ -99,10 +103,10 @@ h1 {
   50% { filter: brightness(1.15); }
   100% { filter: brightness(1); }
 }
-.fight-bar p{
+.fight-bar a{
   text-shadow: none;
 }
-.fight-bar p:hover{
+.fight-bar a:hover{
   text-shadow: var(--text-shadow);
 }
 
@@ -156,7 +160,7 @@ h1 {
 }
 
 .modal-content img {
-  height: 55rem;
+  height: 80vh;
   width: 100%;
 }
 
@@ -511,9 +515,13 @@ footer {
 }
 
 .footer-map {
-  max-width: 5000px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 500px;
   border-radius: 8px;
   overflow: hidden;
+  text-align: center;
 }
 
 .footer-copy {
@@ -551,11 +559,6 @@ footer {
   .brand h1 {
     font-size: 1.8rem;
   }
-
-.modal-content img {
-  height: 40rem;
-  width: 100%;
-}
 
   .hero {
     height: 60vh;
