@@ -560,6 +560,10 @@ footer {
     font-size: 1.8rem;
   }
 
+.modal-content img {
+  height: 65vh;
+}
+
   .hero {
     height: 60vh;
   }
