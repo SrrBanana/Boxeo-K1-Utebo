@@ -85,8 +85,7 @@ h1 {
   border-left: var(--accent-1-color) 0.1rem solid;
 }
 .logo img {
-  max-width: clamp(60px, 15vw, 100px);
-  padding: 0.25rem;
+  max-width: clamp(85px, 15vw, 100px);
 }
 
 /*------------------------------fight-bar-----------------------------*/
@@ -505,7 +504,6 @@ footer {
 .footer-social a {
   margin-right: 1rem;
   font-weight: bold;
-
 }
 
 .footer-container img {
