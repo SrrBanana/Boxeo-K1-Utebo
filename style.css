@@ -215,13 +215,13 @@ h1 {
 
 .hero h2 {
   font-family: "Contrail One", sans-serif;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-bottom: 1rem;
   color: var(--accent-1-color);
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
@@ -405,6 +405,7 @@ h1 {
   border: 0.1rem solid var(--accent-2-color);
   border-radius: 16px;
   padding: 2rem 1.5rem;
+  height: 195px;
 }
 
 .precio-card h3 {
@@ -538,6 +539,9 @@ footer {
   border: 0;
   border-radius: 8px;
 }
+.footer-map p{
+  font-size: 1rem;
+}
 
 .footer-copy {
   text-align: center;
@@ -584,7 +588,7 @@ footer {
 /*----------------------------DISCIPLINAS-------------------------------------*/
   .disciplinas-grid {
     grid-template-columns: 1fr;
-    width: 85%;
+    width: 70%;
   }
   .disciplina img {
     max-width: 180px;
@@ -630,7 +634,6 @@ footer {
   }
   .footer-map {
     width: 100%;
-    max-width: 100%;
     height: 250px;
   }
   .footer-container img{
@@ -645,6 +648,11 @@ footer {
     height: 68vh;
   }
   
+  .disciplinas-grid {
+    width: 90%;
+    height: auto;
+  }
+
   .precios-grid {
     width: 15rem;
   }
