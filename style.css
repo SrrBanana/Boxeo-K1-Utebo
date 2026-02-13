@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Contrail One";
+  src: url("assets/fonts/Contrail_One/ContrailOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg-1-color: #1f1f1f;
   --bg-2-color: #ffffff13;
@@ -23,6 +31,7 @@ body {
   color: var(--base-color);
   font-family: "Roboto", sans-serif;
 }
+
 /*-----------------------------------------------------------------*/
 h1,
 h2,
@@ -256,7 +265,7 @@ h1 {
 }
 
 .divisor span {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Contrail One", serif;
   color: var(--accent-2-color);
   letter-spacing: 0.15em;
   font-size: 1.8rem;
@@ -429,7 +438,6 @@ h1 {
   font-size: 2.5rem;
 }
 
-/* Grid: formulario + info */
 .contacto-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -440,7 +448,6 @@ h1 {
   text-align: left;
 }
 
-/* Formulario */
 .contacto-grid form {
   display: flex;
   flex-direction: column;
@@ -486,6 +493,7 @@ footer {
 
 .footer-info{
   width: 314px;
+  
 }
 
 .footer-info h3 {
@@ -511,13 +519,6 @@ footer {
 .footer-social a {
   font-weight: bold;
 }
-
-/*
-.footer-container img {
-  height: 295px;
-  width: 300px;
-}
-*/
 
 .footer-map {
   display: flex;
