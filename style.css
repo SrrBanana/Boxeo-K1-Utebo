@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Contrail+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --bg-1-color: #1f1f1f;
   --bg-2-color: #ffffff1a;
@@ -518,7 +516,7 @@ footer {
 
 .footer-container img {
   height: 270px;
-  width: 314px;
+  width: 300px;
 }
 
 .footer-map {
