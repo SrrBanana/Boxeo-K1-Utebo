@@ -1,0 +1,325 @@
+/*---------------------------------*/
+/* FUENTES Y VARIABLES GLOBALES    */
+/*---------------------------------*/
+@font-face {
+  font-family: "Contrail One";
+  src: url("/assets/fonts/Contrail_One/ContrailOne-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-1-color: #1f1f1f;
+  --bg-2-color: #2f2f2f;
+  --base-color: #fff8f0;
+  --accent-2-color: #e53c3c;
+  --accent-1-color: #1fa3dc;
+  --space: 1rem;
+  --text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.51);
+  --boxeo-color: #c62828;
+  --k1-color: #ef6c00;
+  --bjj-color: #9138bb;
+  --mtk-color: #21a827;
+  --pilates-color: #a12f89;
+  --competicion-color: #ffd000d3;
+  --libre-color: #797979;
+}
+
+/*---------------------------------*/
+/* RESET Y BASE                     */
+/*---------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-1-color);
+  color: var(--base-color);
+  font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3 {
+  color: var(--accent-1-color);
+  font-family: "Contrail One", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+  text-shadow: var(--text-shadow);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent-1-color);
+  outline-offset: 4px;
+}
+
+/*---------------------------------*/
+/* HEADER COMÚN                     */
+/*---------------------------------*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 0.1rem solid var(--accent-1-color);
+  background-color: var(--bg-1-color);
+}
+header a:hover {
+  color: var(--accent-2-color);
+}
+.header-container {
+  display: flex;
+  gap: var(--space);
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+}
+.header-container nav ul {
+  display: flex;
+  font-size: 18px;
+  gap: 2.2rem;
+  padding: var(--space);
+  border-left: var(--accent-1-color) 0.1rem solid;
+}
+.logo img {
+  width: 100px;
+}
+
+/*---------------------------------*/
+/* BOTONES COMUNES                  */
+/*---------------------------------*/
+.btn-cta {
+  background-color: var(--accent-2-color);
+  color: var(--base-color);
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-cta:hover {
+  background-color: var(--accent-1-color);
+  color: var(--bg-1-color);
+}
+
+/*---------------------------------*/
+/* DIVISORES                         */
+/*---------------------------------*/
+.divisor {
+  width: 96%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.divisor::before,
+.divisor::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--accent-2-color);
+}
+.divisor span {
+  font-family: "Contrail One", serif;
+  color: var(--accent-2-color);
+  letter-spacing: 0.15em;
+  font-size: 1.8rem;
+  white-space: nowrap;
+}
+
+/*---------------------------------*/
+/* FIGHT BAR COMUN                  */
+/*---------------------------------*/
+.fight-bar {
+  background: linear-gradient(90deg, var(--accent-2-color), var(--accent-1-color));
+  animation: pulse 2.5s infinite;
+}
+@keyframes pulse {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
+}
+.fight-bar a {
+  text-shadow: none;
+}
+.fight-bar a:hover {
+  text-shadow: var(--text-shadow);
+}
+.fight-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem 1.2rem;
+  padding: 0.8rem 1rem;
+  color: var(--base-color);
+  font-weight: bold;
+  text-align: center;
+}
+.fight-label {
+  background: rgba(0,0,0,0.3);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+.fight-main {
+  font-size: 1rem;
+}
+.fight-extra {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/*---------------------------------*/
+/* MODALES GENERALES                 */
+/*---------------------------------*/
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+.modal:target {
+  display: flex;
+}
+.modal-content {
+  position: relative;
+  max-width: 90%;
+}
+.modal-content img {
+  height: 80vh;
+  width: 100%;
+}
+.close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  font-size: 1.5rem;
+}
+
+/*---------------------------------*/
+/* FOOTER COMÚN                     */
+/*---------------------------------*/
+footer {
+  background-color: var(--bg-2-color);
+  color: var(--base-color);
+  padding: 2rem;
+  font-size: 0.95rem;
+  border-top: 0.1rem solid var(--accent-1-color);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-info {
+  width: 314px;
+}
+.footer-info h3 {
+  font-family: "Contrail One", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.footer-info p, .footer-info a {
+  color: var(--base-color);
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+.footer-info a {
+  color: var(--accent-2-color);
+}
+.footer-info a:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+.footer-social a {
+  font-weight: bold;
+}
+.footer-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 600px;
+  height: 270px;
+  overflow: hidden;
+  text-align: center;
+}
+.footer-map iframe {
+  width: 100%;
+  height: 250px;
+  max-width: 600px;
+  border: 0;
+  border-radius: 8px;
+}
+.footer-map p {
+  font-size: 1rem;
+}
+.footer-copy {
+  text-align: center;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--accent-2-color);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/*---------------------------------*/
+/* MEDIA QUERIES GENERALES          */
+/*---------------------------------*/
+@media (max-width: 1024px) {
+  .header-container {
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  .header-container nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    border-left: none;
+    border-top: 0.1rem solid var(--accent-1-color);
+    width: 100%;
+  }
+  .brand h1 {
+    font-size: 1.8rem;
+  }
+  .logo img {
+    width: 85px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .footer-map {
+    width: 100%;
+    height: 250px;
+  }
+  .footer-container img{
+    width: 16rem;
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "lunes": [
+    {
+      "inicio": "16:30",
+      "fin": "17:30",
+      "disciplina": "Muay Thai Kids",
+      "entrenador": "Xaime Colas Benitez",
+      "nivel": "Infantil",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "mtk"
+    },
+    {
+      "inicio": "17:30",
+      "fin": "18:30",
+      "disciplina": "Pilates",
+      "entrenador": "???",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "pilates"
+    },
+    {
+      "inicio": "18:30",
+      "fin": "19:45",
+      "disciplina": "K1",
+      "entrenador": "Jesus Soriano Marco",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "k1"
+    },
+    {
+      "inicio": "19:45",
+      "fin": "21:00",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    }
+  ],
+
+  "martes": [
+    {
+      "inicio": "10:00",
+      "fin": "11:15",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "17:00",
+      "fin": "18:15",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "18:15",
+      "fin": "19:30",
+      "disciplina": "Brazilian Jiu-Jitsu",
+      "entrenador": "Costel Blahuianu",
+      "nivel": "Todos",
+      "vestimenta": "Gi",
+      "colorKey": "bjj"
+    },
+    {
+      "inicio": "19:30",
+      "fin": "20:45",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "20:45",
+      "fin": "22:00",
+      "disciplina": "Boxeo Competición",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Competición",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "competicion"
+    }    
+  ],
+
+  "miercoles": [
+    {
+      "inicio": "10:00",
+      "fin": "11:15",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "16:30",
+      "fin": "17:30",
+      "disciplina": "Muay Thai Kids",
+      "entrenador": "Xaime Colas Benitez",
+      "nivel": "Infantil",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "mtk"
+    },
+    {
+      "inicio": "17:30",
+      "fin": "18:30",
+      "disciplina": "Pilates",
+      "entrenador": "???",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "pilates"
+    },
+    {
+      "inicio": "18:30",
+      "fin": "19:45",
+      "disciplina": "K1",
+      "entrenador": "Jesus Soriano Marco",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "k1"
+    },
+    {
+      "inicio": "19:45",
+      "fin": "21:00",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    }
+  ],
+
+  "jueves": [
+    {
+      "inicio": "10:00",
+      "fin": "11:15",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "17:00",
+      "fin": "18:15",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "18:15",
+      "fin": "19:30",
+      "disciplina": "Brazilian Jiu-Jitsu",
+      "entrenador": "Costel Blahuianu",
+      "nivel": "Todos",
+      "vestimenta": "NO-Gi",
+      "colorKey": "bjj"
+    },
+    {
+      "inicio": "19:30",
+      "fin": "20:45",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "20:45",
+      "fin": "22:00",
+      "disciplina": "Boxeo Competición",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Competición",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "competicion"
+    }    
+  ],
+
+  "viernes": [
+    {
+      "inicio": "16:30",
+      "fin": "17:30",
+      "disciplina": "Muay Thai Kids",
+      "entrenador": "Xaime Colas Benitez",
+      "nivel": "Infantil",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "mtk"
+    },
+    {
+      "inicio": "17:30",
+      "fin": "18:30",
+      "disciplina": "K1 Competición",
+      "entrenador": "Jesus Soriano Marco",
+      "nivel": "Competición",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "competicion"
+    },
+    {
+      "inicio": "18:30",
+      "fin": "19:30",
+      "disciplina": "K1",
+      "entrenador": "Jesus Soriano Marco",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "k1"
+    },
+    {
+      "inicio": "19:30",
+      "fin": "20:30",
+      "disciplina": "Boxeo",
+      "entrenador": "Sergio Mateo",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "boxeo"
+    },
+    {
+      "inicio": "20:30",
+      "fin": "22:00",
+      "disciplina": "Brazilian Jiu-Jitsu",
+      "entrenador": "Costel Blahuianu",
+      "nivel": "Todos",
+      "vestimenta": "Gi",
+      "colorKey": "bjj"
+    }
+  ],
+
+  "sabado": [
+    {
+      "inicio": "10:00",
+      "fin": "13:00",
+      "disciplina": "---",
+      "entrenador": "---",
+      "nivel": "Todos",
+      "vestimenta": "Ropa deportiva",
+      "colorKey": "libre"
+    }
+  ],
+  "domingo": []
+}

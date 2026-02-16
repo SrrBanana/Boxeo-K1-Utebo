@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" as="image" href="assets/images/hero-boxeo.webp">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" as="image" fetchpriority="high" href="/assets/images/hero-boxeo.webp">
+    <link rel="stylesheet" href="/css/pages/home.css"/>
+    <link rel="stylesheet" href="/css/base.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -44,13 +45,16 @@
     <meta property="og:image" content="https://boxeo-k1-utebo.vercel.app/assets/images/og-image.webp">
     <meta property="og:url" content="https://boxeo-k1-utebo.vercel.app">
     <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta
       name="description"
       content="Gimnasio de Boxeo, K1, Muay Thai infantil, Pilates y Brazilian Jiu-Jitsu en Utebo, Zaragoza. Clases para niños y adultos, todos los niveles, con entrenadores profesionales."
     />
     <link rel="icon" href="/favicon.ico"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <title>Boxeo K1 Utebo | Boxeo, K1 y BJJ en Utebo (Zaragoza)</title>
     <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
   </head>
@@ -61,7 +65,7 @@
         <div class="brand">
           <a href="https://boxeo-k1-utebo.vercel.app" class="logo">
             <img
-              src="assets/images/boxeo-utebo-logo.webp"
+              src="/assets/images/logos/boxeo-utebo-logo.webp"
               alt="Boxeo K1 Utebo - Escuela de artes marciales en Utebo(Zaragoza)"
             />
           </a>
@@ -71,7 +75,7 @@
           <ul>
             <li><a href="https://boxeo-k1-utebo.vercel.app">Inicio</a></li>
             <li><a href="#disciplinas">Disciplinas</a></li>
-            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="/pages/horario.html">Horarios</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
@@ -92,7 +96,7 @@
         <div class="modal-content">
           <a href="#" class="close">✖</a>
           <img
-            src="assets/images/cartelera-pelea.webp"
+            src="/assets/images/cartelera/cartelera-pelea.webp"
             alt="Cartelera del combate"
             loading="lazy"
           />
@@ -123,7 +127,7 @@
               disciplina.
             </p>
             <img
-              src="assets/images/boxeo-utebo-logo.webp"
+              src="/assets/images/logos/boxeo-utebo-logo.webp"
               alt="BD-Kraken-Brazilian Jiu-Jitsu(BJJ) Escuela de artes marciales"
               loading="lazy"
             />
@@ -136,7 +140,7 @@
               combinando striking, potencia y control del combate.
             </p>
             <img
-              src="assets/images/k1-utebo-logo.webp"
+              src="/assets/images/logos/k1-utebo-logo.webp"
               alt="BD-Kraken-Brazilian Jiu-Jitsu(BJJ) Escuela de artes marciales"
               loading="lazy"
             />
@@ -149,7 +153,7 @@
               sumisiones, ideal para defensa personal y competición.
             </p>
             <img
-              src="assets/images/bd-kraken-bjj-logo.webp"
+              src="/assets/images/logos/bd-kraken-bjj-logo.webp"
               alt="Logo de la academia BD Kraken Brazilian Jiu-Jitsu"
               loading="lazy"
             />
@@ -163,7 +167,7 @@
               seguro y motivador.
             </p>
             <img
-              src="assets/images/muay-thai-kids-logo.webp"
+              src="/assets/images/logos/muay-thai-kids-logo.webp"
               alt="Logo de la academia BD Kraken Brazilian Jiu-Jitsu"
               loading="lazy"
             />
@@ -354,7 +358,7 @@
           <p>Entrenamos en Utebo, a pocos minutos de Zaragoza, en un ambiente cercano y enfocado tanto a la iniciación como a la competición.</p>
         </div>
             <img  
-              src="assets/images/boxeo-utebo-logo.webp"
+              src="/assets/images/logos/boxeo-utebo-logo.webp"
               alt="Boxeo K1 Utebo - Escuela de artes marciales"
               loading="lazy"
             />

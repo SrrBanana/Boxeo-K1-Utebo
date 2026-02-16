@@ -1,0 +1,237 @@
+#disciplinas,
+#horarios,
+#precios,
+#contacto {
+  scroll-margin-top: 6rem;
+}
+/*---------------------------------*/
+/* HERO                              */
+/*---------------------------------*/
+.hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-image: url("/assets/images/hero-boxeo.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50rem;
+  padding: 2rem;
+  color: var(--base-color);
+  opacity: 0;
+  transform: translateY(-10rem);
+  animation: fadeInHero 1s forwards;
+}
+@keyframes fadeInHero {
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero h2 {
+  font-family: "Contrail One", sans-serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+  color: var(--accent-1-color);
+}
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+/*---------------------------------*/
+/* DISCIPLINAS INDEX                */
+/*---------------------------------*/
+.disciplinas {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.disciplinas h2 {
+  font-size: 2.5rem;
+}
+.disciplinas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.disciplina {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 2rem;
+  border: 0.1rem solid var(--accent-1-color);
+  border-radius: 0.5rem;
+  background-color: var(--bg-2-color);
+}
+.disciplina h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid var(--accent-2-color);
+}
+.disciplina p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.disciplina img {
+  width: 250px;
+  margin-top: 1rem;
+}
+
+/*---------------------------------*/
+/* HORARIOS INDEX                   */
+/*---------------------------------*/
+#horarios {
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-1-color);
+}
+#horarios h2 {
+  font-size: 2.5rem;
+}
+.horario-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.dia {
+  background-color: var(--bg-2-color);
+  padding: 1.8rem;
+  border-radius: 16px;
+  border: 0.1rem solid var(--accent-1-color);
+}
+.dia h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--accent-2-color);
+  padding-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+.dia p {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.dia p strong {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+.boxeo { background-color: var(--boxeo-color); }
+.k1 { background-color: var(--k1-color); }
+.bjj { background-color: var(--bjj-color); }
+.mtk { background-color: var(--mtk-color); }
+.pilates { background-color: var(--pilates-color); }
+.competicion { background-color: var(--competicion-color); }
+.free { background-color: var(--libre-color); }
+
+/*---------------------------------*/
+/* PRECIOS INDEX                    */
+/*---------------------------------*/
+.precios {
+  padding: 2.5rem 1.5rem 1rem;
+  text-align: center;
+}
+.precios-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.precio-card {
+  background-color: var(--bg-2-color);
+  border: 0.1rem solid var(--accent-2-color);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  height: 195px;
+}
+.precio-card h3 { font-size: 1.4rem; }
+.precio { font-size: 2rem; font-weight: bold; color: var(--accent-2-color); margin: 1rem 0; }
+.destacado { border-color: var(--accent-1-color); }
+
+/*---------------------------------*/
+/* FORMULARIO INDEX                 */
+/*---------------------------------*/
+.contacto {
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+.contacto h2 { font-size: 2.5rem; }
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  align-items: center;
+  text-align: left;
+}
+.contacto-grid form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacto-grid label { font-weight: bold; }
+.contacto-grid input,
+.contacto-grid textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 0.1rem solid var(--accent-1-color);
+  background-color: var(--bg-2-color);
+  color: var(--base-color);
+  font-family: "Roboto", sans-serif;
+  resize: none;
+}
+.contacto-grid .btn-cta {
+  width: max-content;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+
+/*---------------------------------*/
+/* MEDIA QUERIES INDEX              */
+/*---------------------------------*/
+@media (max-width: 1024px) {
+  #disciplinas, #horarios, #precios, #contacto {
+    scroll-margin-top: 9rem;
+  }
+  .hero { height: 82vh; }
+  .hero p { font-size: 1rem; }
+  .btn-cta { padding: 0.7rem 1.6rem; }
+  .disciplinas-grid { grid-template-columns: 1fr; width: 70%; }
+  .disciplina img { max-width: 180px; }
+  .horario-grid { width: 85%; }
+  .dia { padding: 1.4rem; }
+  .dia h3 { font-size: 1.2rem; }
+  .dia p { font-size: 0.95rem; }
+  .dia p strong { font-size: 0.8rem; }
+  .precios-grid { grid-template-columns: 1fr; width: 60%; }
+  .contacto-grid { grid-template-columns: 1fr; text-align: center; width: 70%; }
+}
+
+@media (max-width: 480px) {
+  .hero { height: 68vh; }
+  .disciplinas-grid { width: 90%; height: auto; }
+  .precios-grid { width: 15rem; }
+  .contacto-grid { width: 100%; }
+}

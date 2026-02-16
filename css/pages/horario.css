@@ -1,0 +1,85 @@
+main{
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.50)),
+    url("/assets/images/og-image.webp");
+
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  height: 84rem;
+}
+
+#clase-actual {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--accent-2-color);
+}
+
+#countdown {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: var(--base-color);
+  font-weight: 600;
+}
+
+.horario h2{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0.1rem;
+}
+.horario-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.horario-nav li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--bg-2-color);
+}
+.horario-nav li:hover{
+    background-color: var(--accent-2-color);
+}
+.horario-nav li.activo {
+  background-color: var(--accent-1-color);
+  color: var(--bg-1-color);
+  font-weight: bold;
+}
+
+#tabla-horario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.clase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background-color: var(--bg-2-color);
+  color: var(--base-color);
+}
+.clase strong{
+    color: var(--accent-1-color);
+}
+
+@media (max-width: 480px) {
+    .horario{
+        display: flex;
+        flex-direction: column;
+    }
+}
