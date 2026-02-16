@@ -34,10 +34,8 @@ main{
 .horario-nav ul {
   display: flex;
   justify-content: center;
-  gap: 0.8rem;
+  gap: 0.6rem;
   margin-bottom: 1rem;
-  list-style: none;
-  padding: 0;
 }
 
 .horario-nav li {
