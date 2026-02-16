@@ -34,7 +34,7 @@ main{
 .horario-nav ul {
   display: flex;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -79,5 +79,9 @@ main{
     .horario{
         display: flex;
         flex-direction: column;
+    }
+
+    .horario-nav ul {
+      gap: 0.6rem;
     }
 }
