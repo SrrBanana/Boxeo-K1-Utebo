@@ -1,0 +1,20 @@
+[
+  {
+    "peleador": "Moran “El Desokupa”",
+    "rival": "Daniel",
+    "disciplina": "Boxeo Amateur",
+    "lugar": "Polideportivo Municipal Villa Medina de Iregüa (La Rioja)",
+    "fecha": "2026-03-07",
+    "hora": "20:00",
+    "cartelera": "/assets/images/cartelera/cartelera-pelea.webp"
+  },
+  {
+    "peleador": "Asier - Patri - Iván - Rivas - Abraham “El Abogao del K.O” - Cristian Carballo",
+    "rival": "???",
+    "disciplina": "K1",
+    "lugar": "Pabellon Multiusos Calanda(Teruel)",
+    "fecha": "2026-02-21",
+    "hora": "19:00",
+    "cartelera": "/assets/images/cartelera/cartelera-pelea2.webp"
+  }
+]

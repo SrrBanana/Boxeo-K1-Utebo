@@ -7,6 +7,7 @@
     <link rel="preload" as="image" fetchpriority="high" href="/assets/images/hero-boxeo.webp">
     <link rel="stylesheet" href="/css/pages/home.css"/>
     <link rel="stylesheet" href="/css/base.css"/>
+
     <link rel="canonical" href="https://boxeo-k1-utebo.vercel.app">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +63,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
     <title>Boxeo K1 Utebo | Boxeo, K1 y BJJ en Utebo (Zaragoza)</title>
     <!--<script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+    <script src="/js/combates.js"></script>
   </head>
 
   <body>
@@ -89,22 +91,12 @@
     </header>
 
     <main>
-      <div class="fight-bar">
-        <a href="#cartelera" class="fight-link">
-          🥊 <strong>Próxima pelea: </strong>
-          Daniel vs Moran “El Desokupa” |
-          <span>📍 Polideportivo Municipal Villa Medina de Iregüa (La Rioja)</span> ·
-          <span>🗓️ Sabado 7 de Marzo · 🕘 20:00</span>
-        </a>
-      </div>
+      <div id="fight-bar-container"></div>
+
       <div id="cartelera" class="modal">
         <div class="modal-content">
           <a href="#" class="close">✖</a>
-          <img
-            src="/assets/images/cartelera/cartelera-pelea.webp"
-            alt="Cartelera del combate"
-            loading="lazy"
-          />
+          <img id="cartelera-img" src="" alt="Cartelera del combate" loading="lazy"/>
         </div>
       </div>
       <section id="inicio" class="hero">
